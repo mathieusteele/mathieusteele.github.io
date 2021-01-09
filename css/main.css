@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  border: 2px solid #0ea5e9;
+  border: 2px solid #667eea;
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 3rem;
 }
@@ -26,21 +26,22 @@ header h1 {
 main {
   margin-top: 1rem;
   padding: 0.5rem 2rem;
-  font-size: 150%;
+  font-size: 125%;
 }
 
 main h2 {
-  color: #0ea5e9;
+  color: #5a67d8;
   padding-bottom: 1rem;
   font-weight: 200;
-  border-bottom: 1px solid #0ea5e9;
+  font-size: 150%;
+  border-bottom: 1px solid #434190;
 }
 
 footer {
   /* border: 2px solid #0ea5e9; */
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 3rem;
-  background-color: #6ccdfb;
+  background-color: #c3dafe;
   padding: 1rem;
   font-size: 150%;
   text-align: center;
@@ -56,5 +57,5 @@ li {
 }
 
 #updated-section {
-  color: navy;
+  color: #4c51bf;
 }
