@@ -1,5 +1,6 @@
 /* Use Inter font */
-@import url("https://rsms.me/inter/inter.css");
+/* @import url("https://rsms.me/inter/inter.css"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;900&display=swap");
 
 html {
   font-family: "Inter", sans-serif;
@@ -50,8 +51,9 @@ footer {
 li {
   margin-top: 1rem;
 }
+
 #profile-photo {
-  float: right;
+  /* float: right; */
   max-width: 15em;
   border-radius: 0.25rem;
 }
