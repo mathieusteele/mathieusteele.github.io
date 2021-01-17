@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;900&display=swap");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+header {
+  border: 2px solid #667eea;
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 3rem;
+}
+
+header h1 {
+  font-size: 450%;
+  font-weight: 900;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 250%;
+  font-weight: 600;
+  margin: 0;
+}
+
+main {
+  margin: 1rem auto;
+  font-size: 125%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+section {
+  background: #ddd;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+section h3 {
+  margin: 0.25rem auto;
+  color: #333;
+}
+
+section img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 0.25rem;
+}
+
+main h2 {
+  color: #5a67d8;
+  padding-bottom: 1rem;
+  font-weight: 200;
+  font-size: 150%;
+  border-bottom: 1px solid #434190;
+}
+
+footer {
+  /* border: 2px solid #0ea5e9; */
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: #c3dafe;
+  padding: 1rem;
+  font-size: 150%;
+  text-align: center;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+#updated-section {
+  color: #4c51bf;
+}
+
+@media (min-width: 44em) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 64em) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
