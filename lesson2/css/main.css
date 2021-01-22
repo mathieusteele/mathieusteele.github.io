@@ -1,6 +1,7 @@
 /* I like this font better but it is too heavy for the constraints of this assignment, weighing in at about 300kb */
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"); */
 
+/* Fonts imported from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=PT+Serif:wght@400;700&display=swap");
 
 html {
@@ -71,16 +72,4 @@ li {
 
 #updated-section {
   color: #4c51bf;
-}
-
-@media (min-width: 44em) {
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 64em) {
-  main {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
