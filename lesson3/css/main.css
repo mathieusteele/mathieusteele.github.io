@@ -16,9 +16,15 @@ body {
 }
 
 header {
-  text-align: center;
   margin: 0.25rem;
   padding: 0.75rem 0.75rem 0.75em 1.5rem;
+  width: 20rem;
+  max-width: 100%;
+}
+
+header h2 {
+  width: 100%;
+  text-align: center;
 }
 
 h1 {
@@ -97,7 +103,9 @@ hr {
 
 #logo {
   width: 20rem;
+  max-width: 100%;
 }
+
 .persona {
   display: grid;
   grid-template-columns: 1fr;

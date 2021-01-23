@@ -1,12 +1,4 @@
 @media (min-width: 44em) {
-  header {
-    text-align: left;
-  }
-
-  header h2 {
-    margin-left: 5rem;
-  }
-
   h1 {
     font-size: 350%;
   }
@@ -46,7 +38,6 @@
 
   .persona div {
     margin: 1rem 2rem;
-    /* font-size: 125%; */
   }
 
   .persona li {
