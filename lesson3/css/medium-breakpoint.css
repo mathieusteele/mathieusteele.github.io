@@ -1,4 +1,7 @@
 @media (min-width: 44em) {
+  header {
+    width: 25em;
+  }
   h1 {
     font-size: 350%;
   }
