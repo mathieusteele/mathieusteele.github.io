@@ -1,0 +1,17 @@
+@media (min-width: 44em) {
+  header button {
+    display: none;
+  }
+
+  /* nav ul {
+  margin-left: 2%;
+} */
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+}
