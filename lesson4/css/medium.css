@@ -4,6 +4,10 @@
     margin: 0 auto;
   }
 
+  header div {
+    width: 25em;
+  }
+
   header button {
     display: none;
   }

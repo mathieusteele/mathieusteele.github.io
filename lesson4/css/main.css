@@ -13,23 +13,29 @@ h3 {
 }
 
 header {
-  background-color: #ccc;
+  /* background-color: #ccc; */
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  align-items: end;
 }
 
 header img {
   display: block;
+  width: 100%;
 }
 
 header button {
   margin: 0.2rem;
-  background-color: transparent;
   border: none;
   font-size: 1.6rem;
   color: #555;
+  height: 45px;
+  border-radius: 0.25em;
 }
 
 header div {
   text-align: center;
+  padding-bottom: 0.75em;
 }
 
 nav {
@@ -41,9 +47,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background: orange;
-  /* border: 3px solid navy; */
-  /* width: 100%; */
+  /* background: orange;s */
 }
 
 nav ul.hide {
@@ -55,7 +59,6 @@ nav ul li a {
   padding: 0.8rem;
   text-decoration: none;
   color: #000;
-  /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
 }
 
 nav ul li.active a {
@@ -102,13 +105,11 @@ article {
 
 #five-day ul li {
   list-style-type: none;
-  /* background: red; */
-  /* width: 10em; */
   text-align: center;
   border-right: 1px solid #ccc;
   font-size: 80%;
-  /* background-color: tsseal; */
 }
+
 #five-day ul li:last-child {
   border-right: none;
 }
@@ -116,4 +117,9 @@ article {
 #five-day ul li svg {
   width: 40%;
   margin: 1em;
+}
+
+article a,
+article a:visited {
+  color: #54c6eb;
 }
