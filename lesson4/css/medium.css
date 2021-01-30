@@ -33,6 +33,10 @@
     position: relative;
   }
 
+  #summary h3 {
+    color: #fff;
+  }
+
   #summary div {
     margin-top: -15em;
     margin-left: 2em;
