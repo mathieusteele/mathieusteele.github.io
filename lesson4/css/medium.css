@@ -1,4 +1,9 @@
 @media (min-width: 44em) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   header button {
     display: none;
   }
@@ -13,5 +18,21 @@
 
   nav ul.hide {
     display: block;
+  }
+
+  #summary {
+    position: relative;
+  }
+
+  #summary div {
+    margin-top: -15em;
+    margin-left: 2em;
+    position: absolute;
+    background: rgba(138, 137, 192, 0.95);
+    padding: 0.5em 1.5em;
+    border-radius: 0.25rem;
+  }
+  #five-day ul li {
+    font-size: 120%;
   }
 }

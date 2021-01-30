@@ -1,7 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap");
+
+html {
+  font-family: "PT Serif", serif;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  margin-left: 1em;
+}
+
 header {
   background-color: #ccc;
 }
 
+header img {
+  display: block;
+}
 header button {
   margin: 0.2rem;
   background-color: transparent;
@@ -10,10 +26,22 @@ header button {
   color: #555;
 }
 
+header div {
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  background: #06d6a0;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  background: orange;
+  /* border: 3px solid navy; */
+  /* width: 100%; */
 }
 
 nav ul.hide {
@@ -25,7 +53,7 @@ nav ul li a {
   padding: 0.8rem;
   text-decoration: none;
   color: #000;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
 }
 
 nav ul li.active a {
@@ -34,15 +62,51 @@ nav ul li.active a {
 }
 
 nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 footer {
   background-color: #bbb;
 }
 
+img.hero {
+  width: 100%;
+  height: 18em;
+  object-fit: cover;
+  border-radius: 0.25em;
+}
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.sr-only {
+  display: none;
+}
+
+#five-day ul {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 0;
+}
+
+#five-day ul li {
+  list-style-type: none;
+  /* background: red; */
+  /* width: 10em; */
+  text-align: center;
+  border-right: 1px solid #ccc;
+  /* background-color: tsseal; */
+}
+#five-day ul li:last-child {
+  border-right: none;
+}
+
+#five-day ul li svg {
+  width: 40%;
+  margin: 1em;
 }
