@@ -1,3 +1,8 @@
 @media (min-width: 64em) {
-  /* Something will need to go here */
+  header {
+    /* background-color: #ccc; */
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    align-items: end;
+  }
 }

@@ -1,5 +1,6 @@
-@media (min-width: 44em) {
-  body {
+@media (min-width: 48em) {
+  main,
+  footer {
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -12,16 +13,24 @@
     display: none;
   }
 
-  /* nav ul {
-  margin-left: 2%;
-} */
+  nav ul {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+  }
 
   nav ul li {
-    float: left;
+    flex: 1 1 100%;
+    /* float: left; */
+  }
+
+  nav ul li a {
+    display: block;
+    text-align: center;
   }
 
   nav ul.hide {
-    display: block;
+    display: flex;
   }
 
   img.hero {
@@ -45,6 +54,7 @@
     padding: 0.5em 1.5em;
     border-radius: 0.25rem;
   }
+
   #five-day ul li {
     font-size: 120%;
   }

@@ -29,13 +29,15 @@ h3 {
 header {
   /* background-color: #ccc; */
   display: grid;
-  grid-template-columns: 1fr 50px 10px;
+  grid-template-columns: 60px 1fr 50px 10px;
   align-items: end;
 }
 
 header img {
   display: block;
   width: 100%;
+  max-width: 20em;
+  margin: 0 auto;
 }
 
 header button {
@@ -76,8 +78,8 @@ nav ul li a {
 }
 
 nav ul li.active a {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.05);
+  /* color: #fff; */
 }
 
 nav ul li a:hover {
