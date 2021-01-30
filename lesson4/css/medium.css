@@ -20,6 +20,11 @@
     display: block;
   }
 
+  img.hero {
+    height: 18em;
+    border-radius: 0.25em;
+  }
+
   #summary {
     position: relative;
   }

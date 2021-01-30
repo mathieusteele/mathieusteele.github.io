@@ -6,9 +6,10 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Raleway", sans-serif;
-  margin-left: 1em;
+  padding-left: 1em;
 }
 
 header {
@@ -18,6 +19,7 @@ header {
 header img {
   display: block;
 }
+
 header button {
   margin: 0.2rem;
   background-color: transparent;
@@ -66,14 +68,14 @@ nav ul li a:hover {
 }
 
 footer {
+  padding: 1em;
   background-color: #bbb;
 }
 
 img.hero {
   width: 100%;
-  height: 18em;
+  height: 10em;
   object-fit: cover;
-  border-radius: 0.25em;
 }
 
 .clearfix:after {
@@ -86,9 +88,13 @@ img.hero {
   display: none;
 }
 
+#summary div,
+#five-day,
+article {
+  margin: 1em;
+}
+
 #five-day ul {
-  /* display: flex; */
-  /* justify-content: space-between; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 0;
@@ -100,6 +106,7 @@ img.hero {
   /* width: 10em; */
   text-align: center;
   border-right: 1px solid #ccc;
+  font-size: 80%;
   /* background-color: tsseal; */
 }
 #five-day ul li:last-child {
