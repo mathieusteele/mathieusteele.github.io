@@ -1,8 +1,14 @@
-@media (min-width: 64em) {
+@media (min-width: 1200px) {
   header {
     /* background-color: #ccc; */
     display: grid;
     grid-template-columns: 1fr 1200px 1fr;
     align-items: end;
+  }
+
+  main,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

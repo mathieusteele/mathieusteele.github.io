@@ -1,7 +1,7 @@
 @media (min-width: 48em) {
   main,
   footer {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -36,6 +36,24 @@
   img.hero {
     height: 18em;
     border-radius: 0.25em;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "map contact"
+      "date date";
+  }
+
+  footer div:nth-child(1) {
+    grid-area: contact;
+  }
+  footer div:nth-child(2) {
+    grid-area: map;
+  }
+  footer div:nth-child(3) {
+    grid-area: date;
+    /* column-span: all; */
   }
 
   #summary {

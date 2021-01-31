@@ -78,17 +78,28 @@ nav ul li a {
 }
 
 nav ul li.active a {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.1);
   /* color: #fff; */
 }
 
 nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 footer {
   padding: 1em;
-  background-color: #bbb;
+  background-color: #dfdfdf;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer a.map {
+  text-align: center;
+  padding: 1em;
+}
+
+footer a img {
+  border: 1px solid #54c6eb;
 }
 
 img.hero {
@@ -138,4 +149,33 @@ article {
 article a,
 article a:visited {
   color: #54c6eb;
+}
+
+img.right {
+  float: right;
+  margin: 1em;
+  border-radius: 0.25em;
+}
+
+#social {
+  padding-left: 0.5em;
+}
+
+#social li {
+  list-style-type: none;
+  width: 2em;
+  float: left;
+  margin: 0.5em;
+}
+
+#social a:hover svg {
+  fill: #666;
+}
+
+#dateToday {
+  text-align: center;
+}
+
+#contactInfo {
+  padding: 0 2em;
 }
