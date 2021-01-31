@@ -88,9 +88,13 @@ nav ul li a:hover {
 
 footer {
   padding: 1em;
-  background-color: #dfdfdf;
+  background-color: #f2f2f2;
   display: grid;
   grid-template-columns: 1fr;
+}
+
+footer a {
+  color: #048a81;
 }
 
 footer a.map {
@@ -99,7 +103,7 @@ footer a.map {
 }
 
 footer a img {
-  border: 1px solid #54c6eb;
+  border: 1px solid #048a81;
 }
 
 img.hero {
@@ -148,7 +152,7 @@ article {
 
 article a,
 article a:visited {
-  color: #54c6eb;
+  color: #048a81;
 }
 
 img.right {
