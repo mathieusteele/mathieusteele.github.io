@@ -104,6 +104,7 @@ footer a.map {
 
 footer a img {
   border: 1px solid #007168;
+  max-width: 100%;
 }
 
 img.hero {
