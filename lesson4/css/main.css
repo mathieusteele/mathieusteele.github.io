@@ -8,21 +8,21 @@ html {
 h1 {
   font-family: "Raleway", sans-serif;
   padding-left: 1em;
-  color: #8a89c0;
+  color: #57568d;
   font-size: 130%;
 }
 
 h2 {
   font-family: "Raleway", sans-serif;
   padding-left: 1em;
-  color: #8a89c0;
+  color: #57568d;
   font-size: 175%;
 }
 
 h3 {
   font-family: "Raleway", sans-serif;
   padding-left: 1em;
-  color: #8a89c0;
+  color: #57568d;
   font-size: 150%;
 }
 
@@ -94,7 +94,7 @@ footer {
 }
 
 footer a {
-  color: #048a81;
+  color: #007168;
 }
 
 footer a.map {
@@ -103,7 +103,7 @@ footer a.map {
 }
 
 footer a img {
-  border: 1px solid #048a81;
+  border: 1px solid #007168;
 }
 
 img.hero {
@@ -152,7 +152,7 @@ article {
 
 article a,
 article a:visited {
-  color: #048a81;
+  color: #007168;
 }
 
 img.right {
