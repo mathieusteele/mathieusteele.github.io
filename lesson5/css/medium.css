@@ -56,6 +56,10 @@
     /* column-span: all; */
   }
 
+  footer a.map {
+    display: inline;
+  }
+
   #summary {
     position: relative;
   }
@@ -71,6 +75,10 @@
     background: rgba(138, 137, 192, 0.95);
     padding: 0.5em 1.5em;
     border-radius: 0.25rem;
+  }
+
+  #five-day {
+    display: block;
   }
 
   #five-day ul li {
