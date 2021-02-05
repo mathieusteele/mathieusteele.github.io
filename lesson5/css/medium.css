@@ -5,6 +5,10 @@
     margin: 0 auto;
   }
 
+  header {
+    border: none;
+  }
+
   header div {
     width: 25em;
   }
