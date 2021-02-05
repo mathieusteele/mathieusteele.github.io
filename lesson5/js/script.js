@@ -42,7 +42,7 @@ document.getElementById("day-five").innerText = dayFive.toLocaleDateString(
 );
 
 if (today.toLocaleDateString("en-US", {weekday: "long"}) === "Friday") {
-  document.getElementById("upcoming-event-alert").innerText =
-    "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+  document.getElementById("upcoming-event-alert").innerHTML =
+    "&#129374; Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
   document.getElementById("upcoming-event-alert").classList.remove("hidden");
 }
