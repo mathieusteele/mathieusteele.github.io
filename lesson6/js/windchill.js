@@ -14,3 +14,19 @@ function calculateWindchill(temperature, windSpeed) {
 
   return 35.74 + stepOne - stepTwo + stepThree;
 }
+
+let temperature = parseInt(document.getElementById("temperature").innerHTML);
+
+let windSpeed = parseFloat(document.getElementById("windspeed").innerHTML);
+
+let windchill = calculateWindchill(temperature, windSpeed);
+
+if (typeof windchill === "string") {
+  // Don't display degrees if no windchill
+  document.getElementById("windchill").innerText = `${windchill}`;
+} else {
+  // Round to one decimal
+  document.getElementById("windchill").innerHTML = `${
+    Math.round(windchill * 10) / 10
+  }&deg;`;
+}

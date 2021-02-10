@@ -46,22 +46,3 @@ if (today.toLocaleDateString("en-US", {weekday: "long"}) === "Friday") {
     "&#129374; Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
   document.getElementById("upcoming-event-alert").classList.remove("hidden");
 }
-
-const temperature = 15;
-
-document.getElementById("temperature").innerHTML = `${temperature}&deg;`;
-
-const windSpeed = 6;
-
-document.getElementById("windspeed").innerHTML = `${windSpeed} mph`;
-
-let windchill = calculateWindchill(temperature, windSpeed);
-
-if (typeof windchill === "string") {
-  document.getElementById("windchill").innerText = `${windchill}`;
-} else {
-  // Round to one decimal
-  document.getElementById("windchill").innerHTML = `${
-    Math.round(windchill * 10) / 10
-  }&deg;`;
-}
