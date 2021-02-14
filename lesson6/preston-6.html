@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lesson 6: Preston Idaho Page Improvements">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=PT+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=PT+Serif:wght@400;700&display=swap" -->
+    <!-- rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -42,7 +42,20 @@
     <main>
         <h2>Preston Idaho</h2>
         <section id="summary">
-            <img src="images/mountains-1412683_1200.jpg" alt="illustration of a mountain landscape" class="hero" />
+
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/hero1200.jpg">
+                <source media="(min-width: 600px)" srcset="images/hero900.webp">
+                <source srcset="images/hero500.webp">
+                <img src="images/hero500.jpg" alt="a mountain landscape photograph">
+            </picture>
+
+            <!-- <img srcset="images/hero500.jpg 500w,
+                         images/hero900.jpg 800w,
+                         images/hero1200.jpg 1200w" sizes="(max-width: 500px) 500px,
+                        (max-width: 900px) 900px, 1200px" src="hero1200.jpg" alt="a mountain landscape photograph"
+                class="hero"> -->
+            <!-- <img src="images/mountains-1412683_1200.jpg" alt="illustration of a mountain landscape" class="hero" /> -->
             <div>
                 <h3>Weather Summary</h3>
 
@@ -311,6 +324,7 @@
         </a>
         <div id="dateToday"></div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/windchill.js"></script>
     <script src="js/script.js"></script>
 </body>

@@ -46,3 +46,9 @@ if (today.toLocaleDateString("en-US", {weekday: "long"}) === "Friday") {
     "&#129374; Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
   document.getElementById("upcoming-event-alert").classList.remove("hidden");
 }
+
+WebFont.load({
+  google: {
+    families: ["Raleway:500,800", "PT-Sans:700"],
+  },
+});
