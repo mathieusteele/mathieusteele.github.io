@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Lazy Image Loading Testing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 7: Lazy Image Loading">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/lazy.css">
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Lazy Image Loading Example</h1>
+
+    <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="https://source.unsplash.com/300x400"
+            alt="example lazy loaded image" />
+    </picture>
+    <!-- I varied the dimensions of the requested images because they were all coming back as the same image otherwise -->
+    <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="https://source.unsplash.com/301x401"
+            alt="example lazy loaded image" />
+    </picture>
+    <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="https://source.unsplash.com/302x401"
+            alt="example lazy loaded image" />
+    </picture>
+    <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="https://source.unsplash.com/301x402"
+            alt="example lazy loaded image" />
+    </picture>
+    <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="https://source.unsplash.com/303x400"
+            alt="example lazy loaded image" />
+    </picture>
+    <picture>
+        <img src="https://via.placeholder.com/300x400" data-src="https://source.unsplash.com/300x401"
+            alt="example lazy loaded image" />
+    </picture>
+    <script src="js/lazy-images.js"></script>
+</body>
+
+
+</html>
