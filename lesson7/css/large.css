@@ -15,8 +15,8 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #gallery img {
-    transform: scale(0.99);
+  #gallery figure {
+    transform: scale(0.98);
   }
 
   #gallery figure figcaption {
@@ -26,10 +26,10 @@
   #gallery figure:hover {
     box-shadow: 0 0 20px #999;
     border-radius: 0.25rem;
+    transform: scale(1);
   }
 
   #gallery figure:hover img {
     border-radius: 0.25rem 0.25rem 0 0;
-    transform: scale(1);
   }
 }
