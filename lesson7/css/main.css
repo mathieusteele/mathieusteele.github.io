@@ -206,10 +206,6 @@ img.right {
   grid-template-columns: 1fr;
 }
 
-/* #gallery figure {
-  border-radius: 0.25rem;
-} */
-
 #gallery img {
   width: 100%;
   max-width: 320px;
