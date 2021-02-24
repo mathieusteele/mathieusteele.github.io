@@ -3,6 +3,7 @@ table {
   padding: 0;
   font-family: "Ubuntu";
   border-collapse: collapse;
+  filter: drop-shadow(12px 12px 8px #628ca6);
 }
 
 table,
@@ -32,7 +33,7 @@ table tbody tr:first-child {
 }
 
 table tbody tr:first-child th {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   font-size: 120%;
 }
 
