@@ -44,7 +44,9 @@ document.querySelectorAll("#day-five").innerText = dayFive.toLocaleDateString(
 if (today.toLocaleDateString("en-US", {weekday: "long"}) === "Friday") {
   document.querySelectorAll("#upcoming-event-alert").innerHTML =
     "&#129374; Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
-  document.querySelectorAll("#upcoming-event-alert").classList.remove("hidden");
+  document
+    .querySelectorAll("#upcoming-event-alert")
+    ?.classList?.remove("hidden");
 }
 
 WebFont.load({
