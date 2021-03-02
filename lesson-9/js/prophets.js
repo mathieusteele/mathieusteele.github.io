@@ -6,7 +6,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);
+    // console.table(jsonObject);
 
     const prophets = jsonObject["prophets"];
 
@@ -34,3 +34,9 @@ fetch(requestURL)
       document.querySelector("div.cards").appendChild(card);
     }
   });
+
+WebFont.load({
+  google: {
+    families: ["Josefin Sans:700,400"],
+  },
+});

@@ -1,24 +1,45 @@
+body {
+  padding: 1em;
+}
+
 h1 {
   color: #515089;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
 }
 
 h2 {
   color: #515089;
+  font-family: "Josefin Sans", sans-serif;
 }
 main {
   background: #ddd;
   filter: drop-shadow(0 0 1rem #333);
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 div.cards {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 0.5rem;
 }
 
 div.cards section {
   border: 1px solid #515089;
   background-color: #d9dde6;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+div.cards section img {
+  width: 65%;
+  filter: drop-shadow(0 0 1rem #333);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
 }
 
 @media (min-width: 48em) {
