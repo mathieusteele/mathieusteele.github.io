@@ -224,3 +224,20 @@ img.right {
 .cards {
   display: grid;
 }
+
+.cards section {
+  text-align: center;
+  background: rgba(138, 137, 192, 0.75);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.cards img {
+  width: 100%;
+  max-width: 360px;
+}
+
+.cards h3 {
+  padding-left: 0;
+}

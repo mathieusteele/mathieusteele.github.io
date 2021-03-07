@@ -37,7 +37,9 @@
   }
 
   img.hero {
+    height: 18em;
     border-radius: 0.25em;
+    object-fit: cover;
   }
 
   footer {
@@ -100,10 +102,17 @@
 
   .cards {
     display: block;
+    margin-top: 1rem;
   }
 
   .cards section {
     display: flex;
+  }
+
+  .cards section img,
+  .cards section div {
+    flex: 1;
+    text-align: center;
   }
 
   .cards section:nth-child(even) {

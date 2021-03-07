@@ -41,9 +41,8 @@
 
   .cards section {
     display: block;
-  }
-
-  .cards img {
-    width: 100%;
+    background: rgba(138, 137, 192, 0.75);
+    padding: 1rem;
+    border-radius: 0.25rem;
   }
 }
