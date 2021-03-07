@@ -176,9 +176,9 @@ img.right {
   margin: 0.5em;
 }
 
-#social a:hover svg {
+/* #social a:hover svg {
   fill: #666;
-}
+} */
 
 #dateToday {
   text-align: center;
