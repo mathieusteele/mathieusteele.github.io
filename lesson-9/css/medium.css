@@ -97,4 +97,16 @@
   #storm-center form {
     grid-template-columns: 1fr 2fr 1fr 2fr;
   }
+
+  .cards {
+    display: block;
+  }
+
+  .cards section {
+    display: flex;
+  }
+
+  .cards section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 }

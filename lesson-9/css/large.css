@@ -32,4 +32,18 @@
   #gallery figure:hover img {
     border-radius: 0.25rem 0.25rem 0 0;
   }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .cards section {
+    display: block;
+  }
+
+  .cards img {
+    width: 100%;
+  }
 }
