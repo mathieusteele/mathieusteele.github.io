@@ -1,0 +1,121 @@
+@media (min-width: 48em) {
+  main,
+  footer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  header {
+    border: none;
+  }
+
+  header div {
+    width: 25em;
+  }
+
+  header button {
+    display: none;
+  }
+
+  nav ul {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+
+  img.hero {
+    height: 18em;
+    border-radius: 0.25em;
+    object-fit: cover;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "map contact"
+      "date date";
+  }
+
+  footer div:nth-child(1) {
+    grid-area: contact;
+  }
+  footer div:nth-child(2) {
+    grid-area: map;
+  }
+  footer div:nth-child(3) {
+    grid-area: date;
+  }
+
+  footer a.map {
+    display: inline;
+  }
+
+  #summary {
+    position: relative;
+  }
+
+  #summary h3 {
+    color: #fff;
+  }
+
+  #summary div {
+    margin-top: -15em;
+    margin-left: 2em;
+    position: absolute;
+    background: rgba(138, 137, 192, 0.95);
+    padding: 0.5em 1.5em;
+    border-radius: 0.25rem;
+  }
+
+  #five-day {
+    display: block;
+  }
+
+  #five-day ul li {
+    font-size: 120%;
+  }
+
+  #gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #gallery img {
+    width: 100%;
+  }
+
+  #storm-center form {
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+  }
+
+  .cards {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .cards section {
+    display: flex;
+  }
+
+  .cards section img,
+  .cards section div {
+    flex: 1;
+    text-align: center;
+  }
+
+  .cards section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}

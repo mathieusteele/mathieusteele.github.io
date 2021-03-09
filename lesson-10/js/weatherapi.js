@@ -12,4 +12,5 @@ fetch(apiURL)
     document.getElementById("imagesrc").textContent = imagesrc;
     document.getElementById("icon").setAttribute("src", imagesrc);
     document.getElementById("icon").setAttribute("alt", desc);
+    alert(calculateWindchill(jsObject?.main?.temp, jsObject?.wind?.speed));
   });
