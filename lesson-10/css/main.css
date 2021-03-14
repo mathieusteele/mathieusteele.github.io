@@ -208,7 +208,8 @@ img.right {
 
 #gallery img {
   width: 100%;
-  aspect-ratio: 320 / 198;
+  /* aspect-ratio: 320 / 198; */
+  /* Aspect ratio is widely supported but does not validate */
   max-width: 320px;
   margin: 0 auto;
 }
