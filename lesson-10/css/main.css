@@ -180,6 +180,10 @@ img.right {
   fill: #666;
 } */
 
+.attribution {
+  text-align: center;
+}
+
 #dateToday {
   text-align: center;
 }
