@@ -60,7 +60,7 @@ const prestonAPIURL2 = `https://api.openweathermap.org/data/2.5/forecast?id=${pr
 fetch(prestonAPIURL2)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
+    console.log(jsObject);
 
     forecast = jsObject.list;
 
@@ -82,7 +82,11 @@ fetch(prestonAPIURL2)
         document
           .getElementById(`day-${day}-forecast`)
           .setAttribute("alt", forecast[i].weather[0].main);
-        // console.log(forecast[i].weather[0].main);
+
+        document.getElementById(
+          `day-${day}-temp`
+        ).innerHTML = `${forecast[i].main.temp}&#8457;`;
+
         day = day + 1;
       }
     }
