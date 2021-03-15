@@ -15,12 +15,16 @@ function calculateWindchill(temperature, windSpeed) {
   return 35.74 + stepOne - stepTwo + stepThree;
 }
 
-const prestonCityID = "5604473";
+const currentPageCityID = document
+  .getElementById("individual-town-page")
+  .getAttribute("data-city-id");
+
 const API_KEY = "dfab45f985bf2e59c8c0813c3fb11167";
-const prestonAPIURL = `https://api.openweathermap.org/data/2.5/onecall?lat=42.0963&lon=-111.8766&appid=${API_KEY}&units=imperial`;
+
+const weatherAPIURL = `https://api.openweathermap.org/data/2.5/onecall?lat=42.0963&lon=-111.8766&appid=${API_KEY}&units=imperial`;
 
 // populate weather summary
-fetch(prestonAPIURL)
+fetch(weatherAPIURL)
   .then((response) => response.json())
   .then((jsObject) => {
     // console.log(jsObject);
@@ -54,10 +58,10 @@ fetch(prestonAPIURL)
     ).innerText = `${jsObject?.current?.wind_speed}mph`;
   });
 
-const prestonAPIURL2 = `https://api.openweathermap.org/data/2.5/forecast?id=${prestonCityID}&appid=${API_KEY}&units=imperial`;
+const fiveDayForecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${currentPageCityID}&appid=${API_KEY}&units=imperial`;
 
 // Populate five day forecast
-fetch(prestonAPIURL2)
+fetch(fiveDayForecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
@@ -69,7 +73,10 @@ fetch(prestonAPIURL2)
       if (
         forecast[i].dt_txt.substr(forecast[i].dt_txt.length - 8) === "18:00:00"
       ) {
-        let forecastDate = new Date(forecast[i].dt_txt.substr(0, 10));
+        let forecastDate = new Date(
+          forecast[i].dt_txt.substr(0, 10) + " 00:00"
+        );
+
         document.getElementById(
           `day-${day}-date`
         ).textContent = forecastDate.toLocaleDateString("en-US", {
