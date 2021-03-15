@@ -69,7 +69,9 @@ fetch(prestonAPIURL2)
       if (
         forecast[i].dt_txt.substr(forecast[i].dt_txt.length - 8) === "18:00:00"
       ) {
-        let forecastDate = new Date(forecast[i].dt_txt.substr(0, 10));
+        let forecastDate = new Date(
+          forecast[i].dt_txt.substr(0, 10) + " 00:00"
+        );
         document.getElementById(
           `day-${day}-date`
         ).textContent = forecastDate.toLocaleDateString("en-US", {
