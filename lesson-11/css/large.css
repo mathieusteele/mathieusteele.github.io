@@ -1,0 +1,48 @@
+@media (min-width: 1200px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    align-items: end;
+  }
+
+  main,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #gallery figure {
+    transform: scale(0.98);
+  }
+
+  #gallery figure figcaption {
+    margin: 0.5rem;
+  }
+
+  #gallery figure:hover {
+    box-shadow: 0 0 20px #999;
+    border-radius: 0.25rem;
+    transform: scale(1);
+  }
+
+  #gallery figure:hover img {
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .cards section {
+    display: block;
+    background: rgba(138, 137, 192, 0.75);
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+}
