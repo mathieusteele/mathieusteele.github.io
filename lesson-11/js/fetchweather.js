@@ -31,8 +31,8 @@ fetch(weatherAPIURL)
     document.getElementById("temperature").textContent =
       jsObject?.current?.temp;
 
-    // document.getElementById("current-conditions").textContent =
-    //   jsObject?.current?.weather[0]?.main;
+    document.getElementById("current-conditions").textContent =
+      jsObject?.current?.weather[0]?.main;
 
     let windchill = calculateWindchill(
       jsObject?.current?.temp,
