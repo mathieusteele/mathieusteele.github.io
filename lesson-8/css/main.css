@@ -176,10 +176,6 @@ img.right {
   margin: 0.5em;
 }
 
-#social a:hover svg {
-  fill: #666;
-}
-
 #dateToday {
   text-align: center;
 }
@@ -204,7 +200,6 @@ img.right {
 
 #gallery img {
   width: 100%;
-  aspect-ratio: 320 / 198;
   max-width: 320px;
   margin: 0 auto;
 }
