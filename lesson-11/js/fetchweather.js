@@ -19,15 +19,22 @@ const currentPageCityID = document
   .getElementById("individual-town-page")
   .getAttribute("data-city-id");
 
+const currentPageLatitude = document
+  .getElementById("individual-town-page")
+  .getAttribute("data-latitude");
+
+const currentPageLongitude = document
+  .getElementById("individual-town-page")
+  .getAttribute("data-longitude");
+
 const API_KEY = "dfab45f985bf2e59c8c0813c3fb11167";
 
-const weatherAPIURL = `https://api.openweathermap.org/data/2.5/onecall?lat=42.0963&lon=-111.8766&appid=${API_KEY}&units=imperial`;
+const weatherAPIURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${currentPageLatitude}&lon=${currentPageLongitude}&appid=${API_KEY}&units=imperial`;
 
 // populate weather summary
 fetch(weatherAPIURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
     document.getElementById("temperature").textContent =
       jsObject?.current?.temp;
 
@@ -64,7 +71,7 @@ const fiveDayForecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=
 fetch(fiveDayForecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    // console.log(jsObject);
 
     forecast = jsObject.list;
 
