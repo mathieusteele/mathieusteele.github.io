@@ -96,8 +96,8 @@
     width: 100%;
   }
 
-  #storm-center form {
-    grid-template-columns: 1fr 2fr 1fr 2fr;
+  #storm-center form fieldset {
+    margin-left: 33%;
   }
 
   .cards {

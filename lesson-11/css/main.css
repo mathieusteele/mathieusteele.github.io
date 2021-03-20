@@ -215,15 +215,45 @@ img.right {
 }
 
 #storm-center form {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2em;
   padding: 2em;
 }
 
+#storm-center form {
+  /* background-color: orange; */
+  max-width: 50rem;
+  margin: 0 auto;
+}
+#storm-center form label {
+  display: block;
+  padding: 1rem;
+}
+
+#storm-center form label .formlabel {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+#danger-label {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding: 1rem;
+}
+
+#storm-center input[type="submit"] {
+  display: block;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-size: 150%;
+}
+
+#severity-rating-container {
+  display: inline-block;
+}
+
 #danger-radios {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr;
+  display: inline-block;
 }
 
 .cards {
