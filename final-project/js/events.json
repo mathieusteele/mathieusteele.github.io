@@ -1,0 +1,19 @@
+{
+  "events": [
+    {
+      "name": "Chicken BBQ",
+      "date": "Saturday April 10",
+      "location": "Elton Park"
+    },
+    {
+      "name": "Memorial Day Parade",
+      "date": "Monday May 31",
+      "location": "Main Street"
+    },
+    {
+      "name": "Fireworks",
+      "date": "Sunday July 4",
+      "location": "Canandaigua"
+    }
+  ]
+}

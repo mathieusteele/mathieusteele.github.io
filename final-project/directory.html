@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Bloomfield Chamber of Commerce | Business Directory</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of businesses in Bloomfield, NY">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+</head>
+
+<body>
+    <aside id="weather-alert" class="hidden"></aside>
+    <header>
+        <span class="spacer"></span>
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" id="logo" alt="logo for bloomfield" />
+                <h1 class="sr-only">Bloomfield Chamber of Commerce</h1>
+            </a>
+            <span>Come Bloom With Us</span>
+        </div>
+
+        <button onclick="toggleMenu();">&#9776;</button>
+    </header>
+    <nav class="clearfix">
+        <ul id="hamburger-menu" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="bloomfield.html">Bloomfield</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Directory</h2>
+
+        <button onclick="toggleDirectoryView();">Toggle between Grid and Table Layout</button>
+        <section id="directory"></section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/populate-directory.js"></script>
+    <script src="js/typography.js"></script>
+    <script src="js/directory-view-toggle.js"></script>
+</body>
+
+
+</html>

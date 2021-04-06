@@ -1,0 +1,33 @@
+@media (min-width: 48em) {
+  /* body { */
+  /* background-color: cadetblue; */
+  /* } */
+
+  #directory.gridview {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #directory.gridview div {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  #directory.gridview div h4 {
+    margin-top: 0;
+  }
+
+  #directory.gridview div a img {
+    max-width: 20rem;
+  }
+
+  #directory.listview div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+  }
+
+  #directory.listview div img {
+    max-width: 30rem;
+  }
+}

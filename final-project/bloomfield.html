@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Bloomfield Chamber of Commerce | Business Directory</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of businesses in Bloomfield, NY">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+</head>
+
+<body>
+    <aside id="weather-alert" class="hidden"></aside>
+    <header>
+        <span class="spacer"></span>
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" id="logo" alt="logo for bloomfield" />
+                <h1 class="sr-only">Bloomfield Chamber of Commerce</h1>
+            </a>
+            <span>Come Bloom With Us</span>
+        </div>
+
+        <button onclick="toggleMenu();">&#9776;</button>
+    </header>
+    <nav class="clearfix">
+        <ul id="hamburger-menu" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="bloomfield.html">Bloomfield</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Bloomfield</h2>
+
+
+        <section>
+            <h3>History</h3>
+            <p>The area now known as Bloomfield was acquired in 1788 as part of the Phelps and Gorham purchase. In 1789
+                the town was created as Bloomfield. In 1990, two neighboring communities, East Bloomfield, and Holcomb
+                incorporated to form modern-day Bloomfield.
+                Bloomfield is famous for the Northern Spy Apple, which originated in Bloomfield.
+            </p>
+        </section>
+
+        <section>
+            <h3>Bloomfield Today</h3>
+            <p>Modern-day Bloomfield boasts a friendly atmosphere with a balance of farmland, small businesses, and
+                residential neighborhoods. Many of the residents work in neighboring towns within Ontario County or in
+                the Greater Rochester Area. There are many vibrant religious communities and service organizations
+                including Rotary International and the Lyons club.</p>
+        </section>
+
+        <section>
+            <h3>Upcoming Events</h3>
+            <ul id="events"></ul>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/typography.js"></script>
+    <script src="js/populate-events.js"></script>
+</body>
+
+
+</html>

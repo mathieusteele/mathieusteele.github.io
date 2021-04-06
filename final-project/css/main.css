@@ -1,0 +1,110 @@
+body {
+  font-family: "Playfair Display";
+  background-color: #efe9f4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue";
+  color: #484d6d;
+  /* letter-spacing: 1.5rem; */
+}
+
+h1 {
+  font-size: 400%;
+}
+h2 {
+  font-size: 350%;
+}
+
+h3 {
+  font-size: 250%;
+}
+
+h4 {
+  font-size: 200%;
+}
+
+a {
+  color: #57a773;
+}
+
+p {
+  font-size: 150%;
+  line-height: 1.5;
+}
+
+#weather-alert {
+  background-color: #ee6352;
+  color: #fff;
+  padding: 0.25rem 2rem 1rem;
+}
+
+#weather-alert h2 {
+  font-size: 350%;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+img.hero {
+  width: 60%;
+  max-width: 200px;
+}
+
+section#weather {
+  background-color: lightblue;
+}
+
+section#ads {
+  background-color: burlywood;
+}
+
+#ads img {
+  width: 20rem;
+}
+ul#social svg {
+  width: 2rem;
+}
+
+#directory.gridview {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#directory.gridview div {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+#directory.gridview div h4 {
+  margin-top: 0;
+}
+
+#directory.gridview div a img {
+  max-width: 20rem;
+}
+
+#directory.listview {
+  /* background-color: deepskyblue; */
+}
+
+#directory.listview div h3 {
+  font-size: 150%;
+}
+
+#directory.listview div {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+#directory.listview div img {
+  max-width: 6rem;
+}
