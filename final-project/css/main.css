@@ -1,5 +1,5 @@
 body {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   background-color: #efe9f4;
   padding: 1rem;
 }
@@ -8,7 +8,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   color: #484d6d;
 }
 
@@ -99,8 +99,9 @@ ul#social svg {
 
 footer {
   margin-top: 3rem;
-  background-color: #08b2e3;
+  background-color: #484d6d;
   padding: 1rem;
+  color: #fff;
 }
 
 footer h3 {
@@ -128,7 +129,7 @@ footer a {
 }
 
 .active a {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #3e8e5a;
 }
 
 nav ul.hide {

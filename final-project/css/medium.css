@@ -16,11 +16,12 @@
     display: block;
     text-align: center;
     padding: 1rem;
+    background-color: #57a773;
+    color: #fff;
   }
 
   nav ul li a:hover {
-    background-color: #57a773;
-    color: #fff;
+    background-color: rgba(87, 167, 115, 0.9);
     display: block;
     text-align: center;
   }
