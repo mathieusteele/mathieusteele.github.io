@@ -1,11 +1,5 @@
 const requestURL = "js/members.json";
 
-// const advertiserArray = [
-//   "Bloomers Floral & Gift",
-//   "Parkside Pizza",
-//   "Stan Steele Agency, Inc.",
-// ];
-
 fetch(requestURL)
   .then(function (response) {
     return response.json();
