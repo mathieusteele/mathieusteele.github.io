@@ -4,7 +4,6 @@ The different levels have different perks which you can explain on the page in a
 
 TODO:
 
-- add name, phone, email, comment form on contact us page.
 - improve list/grid button experience
 - improve formatting of list view.
 - add contact information and board of directors information on the contact us page.
