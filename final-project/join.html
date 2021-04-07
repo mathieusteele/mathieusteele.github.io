@@ -41,75 +41,98 @@
 
         <form method="GET" action="thank-you.html">
 
-            <label for="firstName">
-                <span>First Name:</span>
-                <input id="firstName" name="firstName" required />
-            </label>
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="firstName">
+                    <span>First Name:</span>
+                    <input id="firstName" name="firstName" required />
+                </label>
 
-            <label for="lastName">
-                <span>Last Name:</span>
-                <input id="lastName" name="lastName" required />
-            </label>
+                <label for="lastName">
+                    <span>Last Name:</span>
+                    <input id="lastName" name="lastName" required />
+                </label>
 
-            <label for="title">
-                <span>Title:</span>
-                <input id="title" name="title" />
-            </label>
+                <label for="title">
+                    <span>Title:</span>
+                    <input id="title" name="title" />
+                </label>
 
-            <label for="email">
-                <span>Email:</span>
-                <input id="email" name="email" required />
-            </label>
+                <label for="email">
+                    <span>Email:</span>
+                    <input id="email" name="email" required />
+                </label>
 
-            <label for="cellPhone">
-                <span>Cell Phone:</span>
-                <input id="cellPhone" name="cellPhone" />
-            </label>
+                <label for="cellPhone">
+                    <span>Cell Phone:</span>
+                    <input id="cellPhone" name="cellPhone" />
+                </label>
 
-            <label for="businessName">
-                <span>Business Name:</span>
-                <input id="businessName" name="businessName" required />
-            </label>
+            </fieldset>
 
-            <label for="businessAddress">
-                <span>Business Address:</span>
-                <input id="businessAddress" name="businessAddress" />
-            </label>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label for="businessName">
+                    <span>Business Name:</span>
+                    <input id="businessName" name="businessName" required />
+                </label>
 
-            <label for="businessWebsite">
-                <span>Business Website:</span>
-                <input id="businessWebsite" name="businessWebsite" />
-            </label>
+                <label for="businessAddress">
+                    <span>Business Address:</span>
+                    <input id="businessAddress" name="businessAddress" />
+                </label>
 
-            <label for="businessDescription">
-                <span>Business Description:</span>
-                <input id="businessDescription" name="businessDescription" />
-            </label>
+                <label for="businessWebsite">
+                    <span>Business Website:</span>
+                    <input id="businessWebsite" name="businessWebsite" />
+                </label>
 
-            <div id="membership-options">
-                <label for="non-profit"><input type="radio" id="non-profit" name="membership-level"
-                        value="non-profit" /> &nbsp;
-                    Non-Profit</label>
+                <label for="businessDescription">
+                    <span>Business Description:</span>
+                    <input id="businessDescription" name="businessDescription" />
+                </label>
 
-                <label for="bronze">
-                    <input type="radio" id="bronze" name="membership-level" value="bronze" />
-                    &nbsp; Bronze</label>
+            </fieldset>
 
-                <label for="silver">
-                    <input type="radio" id="silver" name="membership-level" value="silver" />
-                    &nbsp; Silver</label>
+            <fieldset>
+                <legend>Membership Options</legend>
 
-                <label for="gold">
-                    <input type="radio" id="gold" name="membership-level" value="gold" />
-                    &nbsp; Gold</label>
-            </div>
+                <span>See below for the details about what is included in each membership level.</span>
+                <div id="membership-options">
+                    <label for="non-profit"><input type="radio" id="non-profit" name="membership-level"
+                            value="non-profit" /> &nbsp;
+                        Non-Profit</label>
 
-            <input type="submit" value="Join!" />
+                    <label for="bronze">
+                        <input type="radio" id="bronze" name="membership-level" value="bronze" />
+                        &nbsp; Bronze</label>
+
+                    <label for="silver">
+                        <input type="radio" id="silver" name="membership-level" value="silver" />
+                        &nbsp; Silver</label>
+
+                    <label for="gold">
+                        <input type="radio" id="gold" name="membership-level" value="gold" />
+                        &nbsp; Gold</label>
+                </div>
+
+            </fieldset>
+
+            <input id="join-the-chamber" type="submit" value="Join!" />
+
+            <h3>Membership Levels</h3>
+            <ul>
+                <li>Non-profit - Includes a directory listing and up to three social media posts per year.</li>
+                <li>Bronze - Includes a directory listing, up to five social media posts per year, 2 tickets to the
+                    luncheon, and a simple advertising package.</li>
+                <li>Silver - Includes a directory listing, up to 8 social media posts per year, 4 tickets to the
+                    luncheon, and a decent advertising package. Includes Business Training.</li>
+                <li>Gold - Includes a directory listing, up to 2 social media posts per month, one table for up to 8
+                    people at the luncheon, and our most robust advertising package. Includes Business Training.</li>
+            </ul>
         </form>
 
-        The different levels have different perks which you can explain on the page in a key. Things like directory
-        listings, business trainings, social media posts, luncheon tickets, sponsorships with levels of advertising,
-        etc.
+
     </main>
 
     <footer>

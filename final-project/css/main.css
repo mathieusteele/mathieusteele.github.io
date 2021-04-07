@@ -155,21 +155,28 @@ nav ul.hide {
   display: none;
 }
 
-form#contact-us fieldset {
+form fieldset {
   max-width: 30rem;
   font-size: 150%;
   margin: 0 auto;
 }
 
-form#contact-us fieldset label {
+form fieldset label {
   padding: 1rem;
   width: 100%;
   display: block;
 }
 
-form#contact-us fieldset label span {
-  /* padding: 1rem; */
+form fieldset label span {
   display: inline-block;
   padding: 0.5rem;
   width: 15rem;
+}
+
+#join-the-chamber {
+  padding: 1.5rem 2.5rem;
+  font-size: 175%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1rem;
 }
