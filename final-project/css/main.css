@@ -1,6 +1,7 @@
 body {
   font-family: "Playfair Display";
   background-color: #efe9f4;
+  padding: 1rem;
 }
 
 h1,
@@ -158,4 +159,25 @@ form fieldset label span {
   margin: 0 auto;
   display: block;
   margin-top: 1rem;
+}
+
+#ads {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#ads section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+#ads section h3 {
+  margin-top: 0;
+}
+
+#ads section a img {
+  max-width: 20rem;
 }

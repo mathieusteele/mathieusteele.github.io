@@ -1,8 +1,4 @@
 @media (min-width: 48em) {
-  body {
-    padding: 1rem;
-  }
-
   header button {
     display: none;
   }
@@ -68,5 +64,9 @@
 
   section#weather {
     float: right;
+  }
+
+  #ads {
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -25,7 +25,7 @@ fetch(requestURL)
     for (let i = 0; i < members.length; i++) {
       if (luckyMembers.includes(i)) {
         let card = document.createElement("section");
-        let name = document.createElement("p");
+        let name = document.createElement("h3");
         let phone = document.createElement("p");
         let anchor = document.createElement("a");
         let logo = document.createElement("img");
