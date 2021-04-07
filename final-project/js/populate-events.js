@@ -10,10 +10,11 @@ fetch(eventsURL)
     for (let i = 0; i < events.length; i++) {
       let event = document.createElement("li");
       let date = document.createElement("span");
-      let name = document.createElement("h4");
+      let name = document.createElement("span");
       let location = document.createElement("span");
 
-      name.textContent = events[i].name;
+      name.textContent = `${events[i].name} `;
+      name.classList.add("event-name");
       date.textContent = `${events[i].date}, `;
       location.textContent = events[i].location;
 

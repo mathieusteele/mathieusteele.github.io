@@ -9,7 +9,6 @@ h3,
 h4 {
   font-family: "Bebas Neue";
   color: #484d6d;
-  /* letter-spacing: 1.5rem; */
 }
 
 h1 {
@@ -31,7 +30,8 @@ a {
   color: #57a773;
 }
 
-p {
+p,
+li {
   font-size: 150%;
   line-height: 1.5;
 }
@@ -48,6 +48,10 @@ p {
 }
 
 .hidden {
+  display: none;
+}
+
+.sr-only {
   display: none;
 }
 
@@ -107,4 +111,42 @@ ul#social svg {
 
 #directory.listview div img {
   max-width: 6rem;
+}
+
+.event-name {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: #08b2e3;
+  padding: 1rem;
+}
+
+footer h3 {
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+#social {
+  display: block;
+}
+#social li {
+  list-style-type: none;
+  float: left;
+  margin: 0.5em;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.active a {
+  background-color: rgba(0, 0, 0, 0.1);
 }
