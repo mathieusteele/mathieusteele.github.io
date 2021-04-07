@@ -57,12 +57,17 @@ fetch(weatherAPIURL)
       "humidity"
     ).innerText = `Humidity: ${jsObject?.current?.humidity}%`;
 
-    let forecastHeader = document.createElement("h3");
-    forecastHeader.innerText = "Three Day Temperature Forecast";
-    document.getElementById("three-day-forecast").appendChild(forecastHeader);
+    let threeDayForecast = "Three Day Forecast: ";
     for (let i = 0; i < 3; i++) {
-      let forecastDay = document.createElement("p");
-      forecastDay.innerHTML = `${jsObject.daily[i].temp.day}&deg;`;
-      document.getElementById("three-day-forecast").appendChild(forecastDay);
+      if (i == 2) {
+        threeDayForecast =
+          threeDayForecast + `${jsObject.daily[i].temp.day}&deg;`;
+      } else {
+        threeDayForecast =
+          threeDayForecast + `${jsObject.daily[i].temp.day}&deg;, `;
+      }
+      document.getElementById(
+        "three-day-forecast"
+      ).innerHTML = threeDayForecast;
     }
   });
