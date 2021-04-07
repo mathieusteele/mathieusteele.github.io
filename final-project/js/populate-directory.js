@@ -15,7 +15,7 @@ fetch(requestURL)
       let logo = document.createElement("img");
 
       name.textContent = members[i].name;
-      phone.textContent = `${members[i].phone}`;
+      phone.textContent = `tel: ${members[i].phone}`;
 
       logo.setAttribute("src", `images/${members[i].logo}`);
       logo.setAttribute("alt", `${members[i].name} Logo`);

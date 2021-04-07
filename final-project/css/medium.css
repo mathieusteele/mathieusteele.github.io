@@ -33,6 +33,11 @@
     display: flex;
   }
 
+  #directory-toggle {
+    display: block;
+    float: right;
+  }
+
   #directory.gridview {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -59,5 +64,9 @@
 
   #directory.listview div img {
     max-width: 30rem;
+  }
+
+  section#weather {
+    float: right;
   }
 }

@@ -37,9 +37,13 @@
         </ul>
     </nav>
     <main>
+        <div id="directory-toggle">
+
+            Show as <button onclick="setDirectoryView('gridview');">GRID</button>
+            <button onclick="setDirectoryView('listview');">LIST</button>
+        </div>
         <h2>Directory</h2>
 
-        <button onclick="toggleDirectoryView();">Toggle between Grid and Table Layout</button>
         <section id="directory"></section>
     </main>
 

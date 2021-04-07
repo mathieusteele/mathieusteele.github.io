@@ -60,14 +60,6 @@ img.hero {
   max-width: 200px;
 }
 
-section#weather {
-  background-color: lightblue;
-}
-
-section#ads {
-  background-color: burlywood;
-}
-
 #ads img {
   width: 20rem;
 }
@@ -75,42 +67,29 @@ ul#social svg {
   width: 2rem;
 }
 
-#directory.gridview {
+#directory-toggle {
+  display: none;
+}
+
+#directory {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-#directory.gridview div {
+#directory div {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   padding: 1rem;
 }
 
-#directory.gridview div h3 {
+#directory div h3 {
   margin-top: 0;
 }
 
-#directory.gridview div a img {
+#directory div a img {
   max-width: 20rem;
-}
-
-#directory.listview {
-  /* background-color: deepskyblue; */
-}
-
-#directory.listview div h3 {
-  font-size: 150%;
-}
-
-#directory.listview div {
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-}
-
-#directory.listview div img {
-  max-width: 6rem;
 }
 
 .event-name {
