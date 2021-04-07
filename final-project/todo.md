@@ -9,7 +9,6 @@ TODO:
 - improve list/grid button experience
 - improve formatting of list view.
 - add contact information and board of directors information on the contact us page.
-- hide hamburger button on medium and large
 - add name, phone, email, comment form on contact us page.
 - take more pictures for home page and bloomfield pages
 - fix three day forecast with dates if possible.

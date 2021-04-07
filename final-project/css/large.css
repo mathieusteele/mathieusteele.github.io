@@ -1,38 +1,10 @@
 @media (min-width: 1400px) {
   body {
-    /* background-color: darkgoldenrod; */
     max-width: 1200px;
     margin: 2rem auto;
   }
 
-  nav ul {
-    display: flex;
-  }
-
-  nav ul li {
-    flex: 1 1 100%;
-    list-style-type: none;
-  }
-
-  nav ul li a {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  nav ul li a:hover {
-    background-color: #57a773;
-    color: #fff;
-    display: block;
-    text-align: center;
-  }
-
-  nav ul.hide {
-    display: flex;
-  }
-
   #directory.gridview {
     grid-template-columns: 1fr 1fr 1fr;
-    /* gap: 1rem; */
   }
 }
