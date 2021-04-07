@@ -118,6 +118,10 @@ footer a {
   color: #fff;
 }
 
+footer a svg path {
+  fill: #fff;
+}
+
 #social {
   display: block;
 }
