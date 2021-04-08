@@ -30,6 +30,12 @@
     display: flex;
   }
 
+  #homehero {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+  }
+
   #directory-toggle {
     display: block;
     float: right;

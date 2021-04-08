@@ -62,12 +62,11 @@ header div {
 }
 
 img.hero {
-  width: 60%;
-  max-width: 200px;
+  width: 100%;
 }
 
 #ads img {
-  width: 20rem;
+  width: 350px;
 }
 ul#social svg {
   width: 2rem;
@@ -95,7 +94,7 @@ ul#social svg {
 }
 
 #directory div a img {
-  max-width: 20rem;
+  max-width: 350px;
 }
 
 .event-name {
@@ -208,4 +207,9 @@ form fieldset label span {
 
 #ads section a img {
   max-width: 20rem;
+}
+
+.button-svg {
+  width: 2rem;
+  height: 2rem;
 }
