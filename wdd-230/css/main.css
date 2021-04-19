@@ -1,0 +1,63 @@
+/* Use Inter font */
+/* @import url("https://rsms.me/inter/inter.css"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;900&display=swap"); */
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  max-width: 960px;
+  margin: 3rem auto;
+}
+
+header {
+  border: 2px solid #667eea;
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 3rem;
+}
+
+header h1 {
+  font-size: 350%;
+  font-weight: 900;
+  margin: 0;
+  /* text-transform: uppercase; */
+}
+
+main {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 125%;
+}
+
+main h2 {
+  color: #5a67d8;
+  padding-bottom: 1rem;
+  font-weight: 200;
+  font-size: 150%;
+  border-bottom: 1px solid #434190;
+}
+
+footer {
+  /* border: 2px solid #0ea5e9; */
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: #c3dafe;
+  padding: 1rem;
+  font-size: 150%;
+  text-align: center;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+#profile-photo {
+  /* float: right; */
+  max-width: 15em;
+  border-radius: 0.25rem;
+}
+
+#updated-section {
+  color: #4c51bf;
+}
