@@ -1,8 +1,12 @@
 {
   "links": [
     {
-      "label": "Week 1 Code Example (Story Editor)",
-      "url": "code-samples/week-1/story_editor.html"
+      "label": "Week 1",
+      "url": "weeks/1/index.html"
+    },
+    {
+      "label": "Week 2",
+      "url": "weeks/2/index.html"
     }
   ]
 }
