@@ -12,7 +12,6 @@ fetch(requestURL)
       let anchor = document.createElement("a");
 
       anchor.setAttribute("href", links[i].url);
-      anchor.setAttribute("target", "_blank");
       anchor.innerText = links[i].label;
       listitem.appendChild(anchor);
 
