@@ -1,4 +1,4 @@
-const requestURL = "js/links.json";
+const requestURL = "https://mathieusteele.github.io/wdd-330/js/links.json";
 
 fetch(requestURL)
   .then(function (response) {
