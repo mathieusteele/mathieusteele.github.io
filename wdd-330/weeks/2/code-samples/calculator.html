@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Make a Simple Calculator in Javascript">
+    <title>Week 2 Calculator Activity</title>
+    <style>
+        #result {
+            border: 1px solid #333;
+            padding: 1rem;
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+
+    <main>
+        <input type="number" id="input1" value="0">
+        <br>
+        <div id='operationDisplay'>➕</div>
+        <input type="number" id="input2" value="0">
+
+        <button onclick="addAll()">&Sigma;</button>
+        <br />
+        <button onclick="setOperation('➕')">➕</button>
+        <button onclick="setOperation('➖')">➖</button>
+        <button onclick="setOperation('✖️')">✖️</button>
+        <button onclick="setOperation('➗')">➗</button>
+
+        <button onclick="calculation()">=</button>
+
+        <button onclick="togglePositions()">🔀</button>
+
+        Result: <div id="result"></div>
+
+        <script>
+            possibleOperations = ["➕", "➖", "✖️", "➗"]
+            let operation = "➕"
+            function setOperation(newOperation) {
+                if (possibleOperations.includes(newOperation)) {
+                    operation = newOperation
+                    document.getElementById("operationDisplay").innerHTML = operation
+                }
+            }
+
+            const getInput = function (inputName) {
+                const variable = parseInt(document.getElementById(inputName).value);
+                return variable;
+            }
+
+            const togglePositions = () => {
+                const x = getInput("input1");
+                const y = getInput("input2");
+
+                document.getElementById("input1").value = y;
+                document.getElementById("input2").value = x;
+            }
+
+            function addAll() {
+                const x = getInput("input1");
+                let total = 0;
+                for (i = 1; i <= x; i++) {
+                    total += i;
+                }
+                document.getElementById("result").innerHTML = total;
+            }
+
+
+            const calculation = () => {
+                const x = getInput("input1");
+                const y = getInput("input2");
+
+                let result = 0;
+                switch (operation) {
+                    case "➕":
+                        result = x + y;
+                        break;
+                    case "➖":
+                        result = x - y;
+                        break;
+                    case "✖️":
+                        result = x * y;
+                        break;
+                    case "➗":
+                        result = x / y;
+                        break;
+                }
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+    </main>
+
+
+
+    <footer>
+        <p>Mathieu Steele <a href="http://www.byui.edu/online">BYU-Idaho Online
+                Learning</a></p>
+    </footer>
+</body>
+
+</html>
