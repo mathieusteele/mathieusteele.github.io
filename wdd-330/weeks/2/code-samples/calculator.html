@@ -25,13 +25,13 @@
         <br>
         <div id='operationDisplay'>➕</div>
         <input type="number" id="input2" value="0">
-
-        <button onclick="addAll()">&Sigma;</button>
+        <br />
         <br />
         <button onclick="setOperation('➕')">➕</button>
         <button onclick="setOperation('➖')">➖</button>
         <button onclick="setOperation('✖️')">✖️</button>
         <button onclick="setOperation('➗')">➗</button>
+        <button onclick="setOperation('summation')">summation</button>
 
         <button onclick="calculation()">=</button>
 
@@ -40,7 +40,7 @@
         Result: <div id="result"></div>
 
         <script>
-            possibleOperations = ["➕", "➖", "✖️", "➗"]
+            possibleOperations = ["➕", "➖", "✖️", "➗", "summation"]
             let operation = "➕"
             function setOperation(newOperation) {
                 if (possibleOperations.includes(newOperation)) {
@@ -62,16 +62,6 @@
                 document.getElementById("input2").value = x;
             }
 
-            function addAll() {
-                const x = getInput("input1");
-                let total = 0;
-                for (i = 1; i <= x; i++) {
-                    total += i;
-                }
-                document.getElementById("result").innerHTML = total;
-            }
-
-
             const calculation = () => {
                 const x = getInput("input1");
                 const y = getInput("input2");
@@ -89,6 +79,11 @@
                         break;
                     case "➗":
                         result = x / y;
+                        break;
+                    case "summation":
+                        for (i = 1; i <= x; i++) {
+                            result += i;
+                        }
                         break;
                 }
                 document.getElementById("result").innerHTML = result;
