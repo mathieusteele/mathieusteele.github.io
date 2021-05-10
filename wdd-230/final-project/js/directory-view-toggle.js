@@ -6,7 +6,7 @@ if (!currentViewSetting) {
 }
 
 function updateViewToMatchLocalStorage(newSetting) {
-  console.log("called with " + newSetting);
+  // console.log("called with " + newSetting);
   document.getElementById("directory").classList.remove("gridview", "listview");
   document.getElementById("directory").classList.add(newSetting);
 }
