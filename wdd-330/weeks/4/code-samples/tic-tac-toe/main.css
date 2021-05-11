@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0;
-    width: 300px;
-    height: 300px;
-    font-size: 70px;
+    width: 360px;
+    height: 360px;
+    font-size: 60px;
 }
 
 #board div {
@@ -14,6 +14,8 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    width: 120px;
+    height: 120px;
 }
 
 #board :nth-child(2) {
