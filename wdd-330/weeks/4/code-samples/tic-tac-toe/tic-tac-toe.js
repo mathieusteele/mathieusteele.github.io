@@ -21,10 +21,12 @@ function handleTouch(event) {
           "result"
         ).innerHTML = `Congratulations, ${currentPlayer} is the winner!`;
       } else {
-        currentPlayer = currentPlayer === "❌" ? "⭕" : "❌";
-        document.getElementById(
-          "result"
-        ).innerHTML = `${currentPlayer} it is your move`;
+        if (numberOfPlays < 9) {
+          currentPlayer = currentPlayer === "❌" ? "⭕" : "❌";
+          document.getElementById(
+            "result"
+          ).innerHTML = `${currentPlayer} it is your move`;
+        }
       }
     } else {
       alert("The game has already ended.");
@@ -49,7 +51,7 @@ function resetGame() {
 
   numberOfPlays = 0;
   currentPlayer = "❌";
-  document.getElementById("result").innerHTML = "";
+  document.getElementById("result").innerHTML = "❌ it is your move";
 }
 
 let board = [
@@ -135,5 +137,6 @@ function checkWinner() {
 
   if (numberOfPlays == 9) {
     document.getElementById("result").innerHTML = `It was a Tie!`;
+    return false;
   }
 }
