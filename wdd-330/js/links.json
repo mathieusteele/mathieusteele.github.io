@@ -2,19 +2,19 @@
   "links": [
     {
       "label": "Week 1",
-      "url": "weeks/1/index.html"
+      "url": "weeks/1/"
     },
     {
       "label": "Week 2",
-      "url": "weeks/2/index.html"
+      "url": "weeks/2/"
     },
     {
       "label": "Week 3",
-      "url": "weeks/3/index.html"
+      "url": "weeks/3/"
     },
     {
       "label": "Week 4",
-      "url": "weeks/4/index.html"
+      "url": "weeks/4/"
     }
   ]
 }
