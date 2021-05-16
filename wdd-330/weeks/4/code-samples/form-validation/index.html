@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Practice</title>
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+    <form id="form" action="/" method="GET">
+
+        <div id="errors"></div>
+
+        <div>
+            <label for="name">Name
+
+                <input type="text" id="name" name="name" required />
+            </label>
+        </div>
+
+        <div>
+            <label for="password">Passphrase
+
+                <input type="password" id="password" name="password" required />
+            </label>
+        </div>
+
+        <div>
+            <label for="passwordRepeated">
+                Passphrase Again
+                <input type="password" id="passwordRepeated" name="passwordRepeated" required />
+            </label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p>A submit button works to submit a form, however, a button element can be used with a type attribute with a
+        "submit" value. A button with type of button can be used for other actions such as canceling form submission.
+    </p>
+
+
+</body>
+
+</html>
