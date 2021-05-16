@@ -19,25 +19,25 @@
 }
 
 #board :nth-child(2) {
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-top: none;
     border-bottom: none;
 }
 #board :nth-child(4) {
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-left: none;
     border-right: none;
 }
 #board :nth-child(5) {
-    border: 1px solid #000;
+    border: 2px solid #000;
 }
 #board :nth-child(6) {
-        border: 1px solid #000;
+        border: 2px solid #000;
         border-right: none;
         border-left: none;
 }
 #board :nth-child(8) {
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-bottom: none;
     border-top: none;
 }
