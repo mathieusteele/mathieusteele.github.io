@@ -26,18 +26,49 @@ const toggleCompletion = (todoId) => {
   localStorage.setItem("todos", JSON.stringify(currentTodos));
 };
 
+const editTodo = (todoId) => {
+  console.log(`add logic to edit the todo ${todoId} here`);
+};
+
+const deleteTodo = (todoId) => {
+  const todos = getTodos();
+
+  const todoToRemove = todos.filter((todo) => todo.id == todoId)[0];
+
+  todos.splice(todos.indexOf(todoToRemove), 1);
+  localStorage.setItem("todos", JSON.stringify(todos));
+  renderTodos(todos);
+};
+
+const renderOneTodo = (todo) => {
+  const listItem = document.createElement("li");
+
+  listItem.innerHTML = `<input type="checkbox" onChange="toggleCompletion(${
+    todo.id
+  });" ${todo.completed ? "checked" : ""}/> ${
+    todo.content
+  } <button type="button" onClick="editTodo(${
+    todo.id
+  })">Edit</button> <button type="button" onClick="deleteTodo(${
+    todo.id
+  })">Delete</button>`;
+
+  return listItem;
+};
+
 const renderTodos = (todos) => {
   const container = document.getElementById("todos");
 
   container.innerHTML = "";
 
   todos.map((todo) => {
-    const listItem = document.createElement("li");
+    // const listItem = document.createElement("li");
 
-    listItem.innerHTML = `<input type="checkbox" onChange="toggleCompletion(${
-      todo.id
-    });" ${todo.completed ? "checked" : ""}/> ${todo.content}`;
-    container.appendChild(listItem);
+    // listItem.innerHTML = `<input type="checkbox" onChange="toggleCompletion(${
+    //   todo.id
+    //   });" ${todo.completed ? "checked" : ""}/> ${todo.content}`;
+
+    container.appendChild(renderOneTodo(todo));
   });
 };
 
