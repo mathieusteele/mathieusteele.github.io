@@ -62,37 +62,26 @@ const renderTodos = (todos) => {
   container.innerHTML = "";
 
   todos.map((todo) => {
-    // const listItem = document.createElement("li");
-
-    // listItem.innerHTML = `<input type="checkbox" onChange="toggleCompletion(${
-    //   todo.id
-    //   });" ${todo.completed ? "checked" : ""}/> ${todo.content}`;
-
     container.appendChild(renderOneTodo(todo));
   });
 };
 
+// Initial render on page load
 renderTodos(currentTodos);
 
 const newTodoForm = document.getElementById("newTodoForm");
 
 newTodoForm.addEventListener("submit", (event) => {
-  // Read To Dos from LocalStorage
   const currentTodos = getTodos();
 
-  // Create a new To Do
   let newOne = new Todo(document.getElementById("newTodo").value);
 
-  // Add todo to array of todos
   const updatedTodos = [...currentTodos, newOne];
 
-  // Save To Dos array to LocalStorage
   localStorage.setItem("todos", JSON.stringify(updatedTodos));
 
-  // Update To Do List
   renderTodos(updatedTodos);
 
-  // Reset Form
   newTodoForm.reset();
 
   event.preventDefault();
