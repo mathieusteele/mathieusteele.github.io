@@ -49,5 +49,7 @@ h1 {
     #newTodoForm, #controls, button {
         display: none;
     }
-
+    main {
+        box-shadow: none;
+    }
 }
