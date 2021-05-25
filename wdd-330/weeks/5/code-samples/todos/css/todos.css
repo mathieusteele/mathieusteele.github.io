@@ -1,8 +1,10 @@
 html {
-    background-color: #a6e1fa;
+    background-color: #e7f3ff;
 }
 main {
     background-color: white;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 0.33rem;
 }
 
 h1 {
@@ -13,7 +15,7 @@ h1 {
 
 #todos {
     list-style-type: none;
-    padding-inline-start: 0;
+    padding-left: 0;
 }
 
 #todos li {
@@ -27,6 +29,12 @@ h1 {
 
 #todos li button {
     float: right;
+}
+
+#controls {
+    border-top: 1px solid #0e6ba8;
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
 
 #newTodoForm {
