@@ -17,7 +17,7 @@ function getTodos() {
 function getTodoFilter() {
   return localStorage.getItem("todo-filter")
     ? localStorage.getItem("todo-filter")
-    : "all";
+    : "All";
 }
 
 const toggleCompletion = (todoId) => {
@@ -50,15 +50,16 @@ const setFilter = (newValue) => {
 const renderOneTodo = (todo) => {
   const listItem = document.createElement("li");
 
-  listItem.innerHTML = `<input type="checkbox" onChange="toggleCompletion(${
+  listItem.innerHTML = `<label for="${todo.id}"><input type="checkbox" id="${
     todo.id
-  });" ${todo.completed ? "checked" : ""}/> ${
-    todo.content
-  } <button type="button" onClick="deleteTodo(${
+  }" onChange="toggleCompletion(${todo.id});" ${
+    todo.completed ? "checked" : ""
+  }/> ${todo.content} </label><button type="button" onClick="deleteTodo(${
     todo.id
-  })">Delete</button> <button type="button" onClick="editTodo(${
-    todo.id
-  })">Edit</button> `;
+  })">Delete</button>`;
+  // <button type="button" onClick="editTodo(${
+  //   todo.id
+  // })">Edit</button> `;
 
   return listItem;
 };
@@ -70,16 +71,10 @@ const renderTodos = () => {
 
   container.innerHTML = "";
 
-  if (filter == "completed") {
+  if (filter == "Completed") {
     todos = todos.filter((todo) => todo.completed);
-    // .map((todo) => {
-    //   container.appendChild(renderOneTodo(todo));
-    // });
-  } else if (filter == "incomplete") {
+  } else if (filter == "Incomplete") {
     todos = todos.filter((todo) => !todo.completed);
-    // .map((todo) => {
-    //   container.appendChild(renderOneTodo(todo));
-    // });
   }
 
   todos.map((todo) => {
@@ -88,36 +83,22 @@ const renderTodos = () => {
 
   let controls = document.getElementById("controls");
 
-  let allButton = document.createElement("button");
-  allButton.innerText = "All";
-  allButton.setAttribute("type", "button");
-  allButton.onclick = () => setFilter("all");
-  if (filter == "all") {
-    allButton.setAttribute("disabled", true);
-  }
+  controls.innerHTML = `${todos.length} task${
+    todos.length === 1 ? "" : "s"
+  } left. Filters: `;
 
-  let incompleteButton = document.createElement("button");
-  incompleteButton.innerText = "Incomplete";
-  incompleteButton.setAttribute("type", "button");
-  incompleteButton.onclick = () => setFilter("incomplete");
-  if (filter == "incomplete") {
-    incompleteButton.setAttribute("disabled", true);
-  }
+  const filterTypes = ["All", "Incomplete", "Completed"];
 
-  let completedButton = document.createElement("button");
-  completedButton.innerText = "Completed";
-  completedButton.setAttribute("type", "button");
-  completedButton.onclick = () => setFilter("completed");
-  if (filter == "completed") {
-    completedButton.setAttribute("disabled", true);
-  }
-
-  controls.innerHTML = "Filters: ";
-  controls.appendChild(allButton);
-  controls.appendChild(incompleteButton);
-  controls.appendChild(completedButton);
-
-  // controls.innerHTML = `<button type="button" onClick="setFilter('all')">All</button> <button type="button" onClick="setFilter('incomplete')">Incomplete</button> <button type="button"  onClick="setFilter('completed')">Completed</button>`;
+  filterTypes.map((type) => {
+    let newButton = document.createElement("button");
+    newButton.innerText = type;
+    newButton.setAttribute("type", "button");
+    newButton.onclick = () => setFilter(type);
+    if (filter === type) {
+      newButton.setAttribute("disabled", true);
+    }
+    controls.appendChild(newButton);
+  });
 };
 
 // Initial render on page load
