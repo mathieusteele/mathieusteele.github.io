@@ -1,3 +1,45 @@
+html {
+    background-color: #a6e1fa;
+}
+main {
+    background-color: white;
+}
+
+h1 {
+    color: #0a2472;
+    border-bottom: 1px solid #0e6ba8;
+    padding-bottom: 1rem;
+}
+
 #todos {
     list-style-type: none;
+    padding-inline-start: 0;
+}
+
+#todos li {
+    padding: 0.25rem;
+}
+
+#todos li input[type=checkbox] {
+    transform: scale(2.5);
+    margin: 0.5rem 1rem;
+}
+
+#todos li button {
+    float: right;
+}
+
+#newTodoForm {
+    margin: 2rem;
+}
+
+#newTodoForm input {
+    padding: .75rem;
+}
+
+@media print {
+    #newTodoForm, #controls, button {
+        display: none;
+    }
+
 }
