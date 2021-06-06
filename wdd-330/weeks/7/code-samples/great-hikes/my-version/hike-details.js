@@ -37,7 +37,7 @@ class Comment {
   }
 }
 
-const commentForm = document.getElementById("hikeCommentForm");
+const hikeCommentForm = document.getElementById("hikeCommentForm");
 
 hikeCommentForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -46,10 +46,11 @@ hikeCommentForm.addEventListener("submit", (event) => {
 
   const hikeName = window.location.search.substr(6).replace(/%20/g, " ");
 
+  const commenterName = document.getElementById("commenterName").value;
   let newOne = new Comment(
     "hike",
     hikeName,
-    document.getElementById("commenterName").value,
+    commenterName,
     document.getElementById("newComment").value
   );
 
@@ -59,5 +60,9 @@ hikeCommentForm.addEventListener("submit", (event) => {
 
   // Hike.showCommentsList();
 
-  commentForm.reset();
+  hikeCommentForm.reset();
+
+  document.getElementById(
+    "message"
+  ).innerText = `Your comment was saved. Thank you, ${commenterName}!`;
 });

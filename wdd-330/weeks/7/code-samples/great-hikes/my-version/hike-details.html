@@ -6,6 +6,9 @@
   <title>Great Hikes Details</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../../../../../css/normalize.css" />
+  <link rel="stylesheet" href="../../../../../css/main.css" />
+  <link rel="stylesheet" href="../../../../../css/medium.css" />
 </head>
 
 <body>
@@ -16,7 +19,8 @@
       <a class="back" href="index.html">Back</a>
     </div>
     <div>
-      <form id="commentForm" action="./" method="POST">
+      <p id="message"></p>
+      <form id="hikeCommentForm" action="./" method="POST">
         <label for="commenterName">
           Your Name:<br />
           <input type="text" id="commenterName" name="commenterName" />
