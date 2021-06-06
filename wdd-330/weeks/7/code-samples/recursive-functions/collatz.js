@@ -1,6 +1,8 @@
 function collatz(n, sequence = [n]) {
   if (n === 1) {
-    return `Sequence took ${sequence.length} steps. It was ${sequence}`;
+    return `Sequence took ${sequence.length} steps. It was ${sequence.join(
+      ", "
+    )}`;
   }
   if (n % 2 === 0) {
     n = n / 2;
