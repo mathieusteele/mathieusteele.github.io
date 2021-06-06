@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Mathieu Steele | WDD-330 | Recursive Functions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mathieu Steele's coursework to learn and reinforce web design and development principles.">
+    <link rel="stylesheet" href="../../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../../css/main.css">
+    <link rel="stylesheet" href="../../../../css/medium.css">
+    <link rel="shortcut icon" href="../../../../favicon.ico?v=2" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <img id="profile-photo" src="../../../../images/mathieu.jpg" alt="Mathieu Steele in a suit." />
+        <h1>Mathieu Steele</h1>
+
+    </header>
+    <main>
+        <h2><a href="../../../../">Home</a> &rarr; <a href="../../">Week 7</a> &rarr; Recursive Functions</h2>
+
+        <p>Did you know there was once a mathematician named Lothar Collatz who came up with what is known as the 3n+1
+            conjecture or the collatz conjecture (it also has many other names).
+            There has not been found any number that doesn't eventually end up at one if you apply this formula to it:
+            If even, cut it in half. If odd, multiply by three and add one.
+        </p>
+
+        <p>Try it here:
+
+        <form id="collatzForm">
+            <label>Enter a number:
+                <input type='number' id="number" />
+            </label>
+            <input type="submit" value="Calculate Collatz Conjecture" />
+        </form>
+
+        <p id="result"></p>
+        </p>
+    </main>
+    <footer>
+        &copy; <span id="year"></span> | Mathieu Steele | New York | <a href="https://www.byui.edu/online">BYUI
+            Online
+            Learning</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="collatz.js"></script>
+</body>
+
+
+</html>
