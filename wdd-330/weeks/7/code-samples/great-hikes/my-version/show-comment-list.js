@@ -25,9 +25,11 @@ export function getComments() {
 function renderComment(comment) {
   const item = document.createElement("li");
 
-  item.innerHTML = `${comment.commenterName} commented on ${new Date(
-    comment.date
-  ).toLocaleDateString()}: ${comment.content} `;
+  item.innerHTML = `<strong>${
+    comment.commenterName
+  }</strong> commented on ${new Date(comment.date).toLocaleDateString()}: ${
+    comment.content
+  } `;
 
   return item;
 }
