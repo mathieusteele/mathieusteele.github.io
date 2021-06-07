@@ -42,6 +42,9 @@ export function renderOneHikeFull(hike) {
                 
                     <h3>Directions</h3>
                     <p>${hike.directions}</p>
+
+                    <h3>Comments</h3>
+                    <ul id="comments"></ul>
                 </div>
 
                 </div>

@@ -3,5 +3,5 @@ import {showCommentList} from "./show-comment-list.js";
 
 window.addEventListener("load", () => {
   showHikeList();
-  showCommentList("hike");
+  showCommentList("hike", "all");
 });

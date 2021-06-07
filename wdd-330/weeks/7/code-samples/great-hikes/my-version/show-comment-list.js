@@ -1,14 +1,19 @@
-export function showCommentList(type = "all") {
+export function showCommentList(type = "all", objectName = "all") {
   const commentListElement = document.getElementById("comments");
   commentListElement.innerHTML = "";
   const comments = getComments();
   console.log(type);
   console.log(comments);
 
-  const filteredComments =
+  let filteredComments =
     type == "all"
       ? comments
       : comments.filter((comment) => comment.objectType === type);
+
+  filteredComments =
+    objectName == "all"
+      ? filteredComments
+      : comments.filter((comment) => comment.objectName === objectName);
 
   console.log(filteredComments);
   filteredComments.forEach((comment) => {

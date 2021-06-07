@@ -18,6 +18,8 @@ window.addEventListener("load", () => {
 
       console.log(selectedHike);
       hikeDetails.appendChild(renderOneHikeFull(selectedHike));
+
+      showCommentList("all", selectedHike.name);
     });
 });
 
