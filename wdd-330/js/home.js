@@ -1,4 +1,8 @@
-document.getElementById("year").innerText = new Date().getFullYear();
+let yearContainer = document.getElementById("year");
+
+if (yearContainer) {
+  yearContainer.innerText = new Date().getFullYear();
+}
 
 const lastModified = new Date(document.lastModified);
 
