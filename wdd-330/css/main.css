@@ -62,3 +62,7 @@ li {
 #updated-section {
   color: #4c51bf;
 }
+
+.hidden {
+  display: none;
+}
